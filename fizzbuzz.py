@@ -28,3 +28,10 @@ def alt_fizzbuzz(n):
     return
 
 alt_fizzbuzz(20)
+
+def shorter_fizzbuzz(n):
+    for m in range(1, n+1):
+        print ('fizz'*(m % 3 == 0) + 'buzz'*(m % 5 == 0) or m)
+    return
+
+shorter_fizzbuzz(20)
