@@ -11,10 +11,11 @@ Additionally, your function should do the following:
 
 def fizzbuzz(n):
     for m in range(1, n+1):
-        if (m % 3 == 0 and m % 5 == 0): print('fizzbuzz')
-        elif (m % 3 == 0): print('fizz')
-        elif (m % 5 == 0): print('buzz')
-        else: print(m)
+        output = ''
+        if (m % 3 == 0):  output += 'fizz'
+        if (m % 5 == 0): output = output + 'buzz'
+        if (m % 3 != 0 and m % 5 != 0): output = m
+        print(output)
     return
 
 fizzbuzz(20)
