@@ -18,3 +18,13 @@ def fizzbuzz(n):
     return
 
 fizzbuzz(20)
+
+def alt_fizzbuzz(n):
+    for m in range(1, n+1):
+        print('fizzbuzz' if (m % 3 == 0 and m % 5 == 0) 
+            else 'fizz' if (m % 3 ==0 ) 
+            else 'buzz' if (m % 5 == 0) 
+            else m)
+    return
+
+alt_fizzbuzz(20)
